@@ -1,4 +1,4 @@
-This is a layer to provide ROS Indigo Igloo in an OpenEmbedded Linux system.
+This is a layer to provide ROS melodic Kame in an OpenEmbedded Linux system.
 It provides a stable cross-compilation build system for many common ROS packages. 
 Currently, this layer is still under continuous development.
 
@@ -190,14 +190,14 @@ resolved in the past.
   to the /etc/hosts file, and set up the environment with
 
     export ROS_ROOT=/opt/ros
-    export ROS_DISTRO=indigo
-    export ROS_PACKAGE_PATH=/opt/ros/indigo/share
-    export PATH=$PATH:/opt/ros/indigo/bin
-    export LD_LIBRARY_PATH=/opt/ros/indigo/lib
-    export PYTHONPATH=/opt/ros/indigo/lib/python2.7/site-packages
+    export ROS_DISTRO=melodic
+    export ROS_PACKAGE_PATH=/opt/ros/melodic/share
+    export PATH=$PATH:/opt/ros/melodic/bin
+    export LD_LIBRARY_PATH=/opt/ros/melodic/lib
+    export PYTHONPATH=/opt/ros/melodic/lib/python2.7/site-packages
     export ROS_MASTER_URI=http://localhost:11311
-    export CMAKE_PREFIX_PATH=/opt/ros/indigo
-    touch /opt/ros/indigo/.catkin
+    export CMAKE_PREFIX_PATH=/opt/ros/melodic
+    touch /opt/ros/melodic/.catkin
 
   Finally, you can start roscore with
 
@@ -257,14 +257,6 @@ resolved in the past.
 
   The yaml-cpp recipe originated from the recipe in Kartik Mohta's OpenEmbedded layer
   (cf. https://github.com/kartikmohta/meta-km/blob/master/recipes-devtools/yaml-cpp/yaml-cpp_0.3.0.bb)
-  licensed with the MIT License.
-
-  The python-ecdsa recipe originated from the recipe in the OpenStack Yocto layer
-  (cf. http://git.yoctoproject.org/clean/cgit.cgi/meta-cloud-services/tree/meta-openstack/recipes-devtools/python/python-ecdsa_0.13.bb?id=38973e8bc393a4ca36090c58c8b6eb6d093ea69a)
-  licensed with the MIT License.
-
-  The python-pbr recipe originated from the recipe in the meta-python layer
-  (cf. http://git.openembedded.org/meta-openembedded/tree/meta-python/recipes-devtools/python/python-pbr_3.1.1.bb?id=b3eb3c647dc86306d9346bea621fb4b6994ec461)
   licensed with the MIT License.
 
   The core-image-ros-* recipes originated from the core-image-minimal recipe in OpenEmbedded Core
